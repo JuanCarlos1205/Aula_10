@@ -12,6 +12,9 @@ except ValueError:
 except ZeroDivisionError:
     print('Divisao por zero')
 
+except KeyboardInterrupt:
+    print('Operaçao cancelada pelo usuario')
+
 # Se nao de erro executa o else
 else:
     print(f'Media por funcionario: {media_por_funcionario:.2f}')
