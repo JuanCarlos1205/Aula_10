@@ -6,11 +6,11 @@ try:
 
     media_por_funcionario = total_produzido / funcionarios 
 
-except ValueError:
-    print('Informe um numero')
+except Exception as e:
+    print(f'Ops! erro nos valores de entrada!: {e}')
 
-except ZeroDivisionError:
-    print('Divisao por zero')
+except KeyboardInterrupt:
+    print('Operaçao cancelada pelo usuario')
 
 # Se nao de erro executa o else
 else:
